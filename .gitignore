@@ -137,3 +137,18 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+#RAG / Ai Project Extras
+
+#Vector & embedding data
+vectors/embeddings/
+pinecone-cache/
+index-data/
+
+# Local configs
+config.local.js
+rag.config.js
+
+#Supabase exports
+supabase-export/
+
