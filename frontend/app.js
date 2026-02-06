@@ -20,7 +20,7 @@
 
 const API = (location.hostname === 'localhost')
   ? 'http://localhost:3001'
-  : 'https://api.ncert.ai';
+  : 'https://ncert-ai.onrender.com';
 
 const askBtn = document.getElementById('ask');
 const qBox = document.getElementById('question');
