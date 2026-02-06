@@ -1,0 +1,163 @@
+<!-- <!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NCERT History Assistant</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">NCERT.AI</div>
+      <nav>
+        <button title="Home">☰</button>
+        <button title="History Timeline">🕘</button>
+        <button title="Book Library">📚</button> 
+        <button title="Settings">⚙️</button>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="title">NCERT Assistant</div><div class="badge">RAG Mode</div></header>
+      <section class="hero">
+        <h1>ragini-NCERT Assistant</h1>
+        <p>Ask anything from Class 11–12 NCERT History Question only </p>
+
+        <div class="chips">
+          <button>Harappan Civilization</button>
+          <button>Maurya Empire</button>
+          <button>Mughal Period</button>
+          <button>Freedom Movement</button>
+          <button>Modern India</button>
+        </div>
+
+        <div class="query">
+          <textarea id="question" placeholder="Ask ragini a question from NCERT History..."></textarea>
+          <button id="ask">Ask</button>
+        </div>
+        <div id="answer" class="answer"></div>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>  -->
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NCERT History Assistant</title>
+
+  <meta name="description" content="NCERT History RAG Assistant powered by ragini AI">
+  <meta name="theme-color" content="#111827">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">NCERT.AI</div>
+      <nav>
+        <button title="Home">☰</button>
+        <button title="History Timeline">🕘</button>
+        <button title="Settings">⚙️</button>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <header class="topbar">
+        <div class="title">NCERT Assistant</div>
+        <div class="badge">RAG Mode</div>
+      </header>
+
+      <section class="hero">
+
+        <h1>ragini — NCERT Assistant</h1>
+        <p>Ask anything from Class 11–12 NCERT History only</p>
+
+        <!-- Domain Notice -->
+        <div class="notice">
+          ⚠️ Answers restricted to NCERT History corpus
+        </div>
+
+        <!-- Feature Badges
+        <div class="rag-features">
+          <span>Semantic Chunking</span>
+          <span>Pinecone</span>
+          <span>ScaleDown</span>
+          <span>Metadata Filter</span>
+        </div> -->
+
+        <!-- Quick Chips -->
+        <div class="chips">
+          <button>Harappan Civilization</button>
+          <button>Maurya Empire</button>
+          <button>Mughal Period</button>
+          <button>Freedom Movement</button>
+          <button>Modern India</button>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+
+          <!-- <select id="chapter">
+            <option value="">All Chapters</option>
+            <option value="harappan">Harappan Civilization</option>
+            <option value="maurya">Maurya Empire</option>
+            <option value="mughal">Mughal Period</option>
+            <option value="modern">Modern India</option>
+          </select>
+
+          <label class="toggle">
+            <input type="checkbox" id="ragMode" checked>
+            RAG Mode
+          </label> -->
+
+          <button id="clearChat">Clear Chat</button>
+
+        </div>
+
+        <!-- Chat History -->
+        <div id="chat" class="chat"></div>
+
+        <!-- Query Box -->
+        <div class="query">
+          <!-- <label for="question">Ask Question</label> -->
+          <textarea id="question"
+            placeholder="Ask ragini a question from NCERT History..."></textarea>
+          <button id="ask">Ask</button>
+        </div>
+
+        <!-- Loading -->
+        <div id="loading" class="loading" style="display:none;">
+          ragini is thinking...
+        </div>
+
+        <!-- Error -->
+        <div id="error" class="error"></div>
+
+        <!-- Answer (latest highlight) -->
+        <div id="answer" class="answer"></div>
+
+        <!-- Sources -->
+        <div id="sources" class="sources"></div>
+
+        <!-- Stats -->
+        <div id="stats" class="stats"></div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
