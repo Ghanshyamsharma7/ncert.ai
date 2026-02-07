@@ -1,4 +1,5 @@
 📘 RAGINI — NCERT.ai
+
 Retrieval Augmented Generation Intelligent NCERT Interface
 
 Tagline: Connecting the Dots
@@ -14,14 +15,23 @@ Instead of hallucinating like a normal chatbot, RAGINI retrieves verified textbo
 🧠 What Makes RAGINI Unique (USP)
 
 ✅ Answers grounded strictly in NCERT content
+
 ✅ Semantic chunking of textbook content
+
 ✅ Vector search using Pinecone
+
 ✅ Context compression using ScaleDown API
+
 ✅ Token reduction → lower cost + faster responses
+
 ✅ OCR-ready pipeline for scanned PDFs
+
 ✅ Multi-LLM compatible architecture
+
 ✅ Fallback system if LLM fails
+
 ✅ Scalable backend deployment ready
+
 ✅ Source-aware answers
 
 No blind LLM guessing — retrieval first, generation second.
@@ -88,16 +98,6 @@ Prompt forces answer only from retrieved context
 
 If not found → returns: “Not in NCERT text”
 
-🧠 Smart Fallback Modes
-Situation	Behavior
-No vectors found	Base LLM fallback
-LLM quota exceeded	Return retrieved context
-ScaleDown fails	Use original context
-API failure	Safe answer mode
-📚 Ingestion Pipeline
-NCERT PDF → Parse / OCR → Semantic Chunking
-→ Embedding → Pinecone Upsert
-
 
 Supports:
 
@@ -118,16 +118,25 @@ npm run ingest
 Create .env in backend:
 
 GEMINI_API_KEY=
+
 PINECONE_API_KEY=
+
 PINECONE_HOST=
+
 SUPABASE_URL=
+
 SUPABASE_KEY=
+
 SCALEDOWN_API_KEY=
 
 ▶️ Run Locally
+
 Backend
+
 cd backend
+
 npm install
+
 npm start
 
 
@@ -141,6 +150,7 @@ Health check:
 /health
 
 Frontend
+
 npx serve frontend
 
 
