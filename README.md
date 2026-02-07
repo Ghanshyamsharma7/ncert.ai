@@ -36,22 +36,32 @@ Instead of hallucinating like a normal chatbot, RAGINI retrieves verified textbo
 
 No blind LLM guessing — retrieval first, generation second.
 
+
 🏗 System Architecture
+
 User Question
     ↓
+    
 Semantic Embedding
     ↓
+    
 Pinecone Vector Search
     ↓
+    
 Top-K Context Retrieval
     ↓
+    
 ScaleDown Context Compression
     ↓
+    
 LLM Generation (Gemini / compatible)
     ↓
+    
 Grounded Answer + Sources
 
+
 ⚙️ Tech Stack
+
 Frontend
 
 HTML / CSS / JS UI
@@ -63,11 +73,13 @@ Query panel + source view
 
 Backend
 
+
 Node.js
 
 Express.js API server
 
 REST endpoints
+
 
 AI / RAG Stack
 
@@ -83,7 +95,9 @@ ScaleDown Context Compression
 
 Supabase Storage (PDF bucket)
 
+
 📦 Core Features
+
 🔍 Semantic Retrieval
 
 Chapter & concept-aware chunking
@@ -92,26 +106,18 @@ Vector similarity search
 
 Top-K retrieval pipeline
 
-🧾 Grounded Answering
+Grounded Answering
 
 Prompt forces answer only from retrieved context
 
 If not found → returns: “Not in NCERT text”
 
 
-Supports:
-
-Text PDFs
-
-OCR converted PDFs
-
-Concept-level chunk metadata
-
-Supabase bucket ingestion
 
 Run:
 
 npm run ingest
+
 
 🔐 Environment Variables
 
@@ -128,6 +134,7 @@ SUPABASE_URL=
 SUPABASE_KEY=
 
 SCALEDOWN_API_KEY=
+
 
 ▶️ Run Locally
 
@@ -194,12 +201,15 @@ Multi-language support
 
 Offline embedding generation
 
+
 👨‍💻 Author
 
 Ghanshyam Sharma (BTech CSE 4th Sem)
-AI + RAG Developer
+
 Project: NCERT.ai — RAGINI
+
 Tagline: Connecting the Dots
+
 
 🤝 Contributions & Feedback
 
