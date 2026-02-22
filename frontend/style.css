@@ -1,31 +1,10 @@
-/* :root{--bg:#0b0f14;--panel:#0f1720;--muted:#9aa7b2;--accent:#7c5cff;--text:#e6eef6}
-*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Arial}
-body{margin:0;background:linear-gradient(180deg,#071018, #081220);color:var(--text)}
-.app{display:flex;min-height:100vh}
-.sidebar{width:72px;background:linear-gradient(180deg,#061018,#071320);padding:16px;display:flex;flex-direction:column;align-items:center}
-.sidebar .logo{font-weight:700;margin-bottom:12px}
-.sidebar nav button{display:block;margin:8px 0;background:transparent;border:0;color:var(--muted);font-size:18px}
-.main{flex:1;padding:24px}
-.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
-.badge{background:#17313a;color:#9fe1c1;padding:6px 10px;border-radius:999px;font-weight:600}
-.hero{max-width:900px;margin:0 auto;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:14px}
-h1{margin:0 0 6px;font-size:20px}
-p{color:var(--muted);margin:0 0 16px}
-.chips{display:flex;gap:8px;margin-bottom:12px}
-.chips button{background:#0d1a2a;border:1px solid rgba(255,255,255,0.03);color:var(--muted);padding:8px 12px;border-radius:999px}
-.query{display:flex;gap:12px}
-textarea{flex:1;background:#06101a;border:1px solid rgba(255,255,255,0.03);color:var(--text);padding:12px;border-radius:12px;min-height:96px}
-button#ask{background:var(--accent);border:0;color:white;padding:12px 18px;border-radius:12px}
-.answer{margin-top:18px;padding:12px;border-radius:12px;background:#031018;color:var(--muted)}
-@media(max-width:700px){.app{flex-direction:column}.sidebar{width:100%;flex-direction:row;justify-content:space-between}} */
-
 
 :root{
-  --bg:#0b0f14;
-  --panel:#0f1720;
-  --muted:#9aa7b2;
-  --accent:#7c5cff;
-  --text:#e6eef6;
+  --bg:#ffffff;
+  --panel:#f7f7f8;
+  --muted:#6b7280;
+  --accent:#10a37f;
+  --text:#111827;
 }
 
 *{
@@ -35,7 +14,7 @@ button#ask{background:var(--accent);border:0;color:white;padding:12px 18px;borde
 
 body{
   margin:0;
-  background:linear-gradient(180deg,#071018, #081220);
+  background:#ffffff;
   color:var(--text)
 }
 
@@ -48,11 +27,12 @@ body{
 
 .sidebar{
   width:72px;
-  background:linear-gradient(180deg,#061018,#071320);
+  background:#f7f7f8;
   padding:16px;
   display:flex;
   flex-direction:column;
-  align-items:center
+  align-items:center;
+  border-right:1px solid #e5e7eb;
 }
 
 .sidebar .logo{
@@ -89,8 +69,8 @@ body{
 }
 
 .badge{
-  background:#17313a;
-  color:#9fe1c1;
+  background:#e6f4f1;
+  color:#0f766e;
   padding:6px 10px;
   border-radius:999px;
   font-weight:600
@@ -101,10 +81,10 @@ body{
 .hero{
   max-width:900px;
   margin:0 auto;
-  background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+  background:#ffffff;
   padding:28px;
   border-radius:14px;
-  border:1px solid rgba(255,255,255,0.04)
+  border:1px solid #e5e7eb;
 }
 
 h1{
@@ -120,13 +100,13 @@ p{
 /* ===== Notice ===== */
 
 .notice{
-  background:#0d1622;
-  border:1px solid rgba(255,255,255,0.06);
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
   padding:8px 12px;
   border-radius:10px;
   font-size:13px;
   margin-bottom:12px;
-  color:#cbd5e1
+  color:#374151
 }
 
 /* ===== Feature Chips ===== */
@@ -139,12 +119,12 @@ p{
 }
 
 .rag-features span{
-  background:#0d1a2a;
-  border:1px solid rgba(255,255,255,0.05);
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
   padding:5px 10px;
   border-radius:999px;
   font-size:12px;
-  color:var(--muted)
+  color:#6b7280
 }
 
 /* ===== Topic Chips ===== */
@@ -157,17 +137,17 @@ p{
 }
 
 .chips button{
-  background:#0d1a2a;
-  border:1px solid rgba(255,255,255,0.05);
-  color:var(--muted);
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
+  color:#6b7280;
   padding:8px 12px;
   border-radius:999px;
   cursor:pointer
 }
 
 .chips button:hover{
-  color:var(--text);
-  border-color:rgba(255,255,255,0.15)
+  color:#111827;
+  border-color:#d1d5db
 }
 
 /* ===== Controls ===== */
@@ -181,9 +161,9 @@ p{
 
 .controls select,
 .controls button{
-  background:#06101a;
-  border:1px solid rgba(255,255,255,0.08);
-  color:var(--text);
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  color:#111827;
   padding:8px 10px;
   border-radius:10px;
   cursor:pointer
@@ -208,8 +188,8 @@ p{
 .chat{
   max-height:260px;
   overflow-y:auto;
-  background:#031018;
-  border:1px solid rgba(255,255,255,0.05);
+  background:#ffffff;
+  border:1px solid #e5e7eb;
   border-radius:12px;
   padding:12px;
   margin-bottom:14px
@@ -218,13 +198,13 @@ p{
 .chat .q{
   font-weight:600;
   margin-top:8px;
-  color:#c7d2fe
+  color:#111827
 }
 
 .chat .a{
   margin-top:4px;
   margin-bottom:8px;
-  color:var(--muted);
+  color:#374151;
   line-height:1.5
 }
 
@@ -237,9 +217,9 @@ p{
 
 textarea{
   flex:1;
-  background:#06101a;
-  border:1px solid rgba(255,255,255,0.06);
-  color:var(--text);
+  background:#ffffff;
+  border:1px solid #d1d5db;
+  color:#111827;
   padding:12px;
   border-radius:12px;
   min-height:96px;
@@ -279,9 +259,9 @@ button#ask:hover{
   margin-top:18px;
   padding:12px;
   border-radius:12px;
-  background:#031018;
-  color:var(--muted);
-  border:1px solid rgba(255,255,255,0.05)
+  background:#ffffff;
+  color:#374151;
+  border:1px solid #e5e7eb
 }
 
 /* ===== Sources ===== */
@@ -289,8 +269,8 @@ button#ask:hover{
 .sources{
   margin-top:12px;
   font-size:13px;
-  color:#94a3b8;
-  border-top:1px dashed rgba(255,255,255,0.15);
+  color:#6b7280;
+  border-top:1px dashed #e5e7eb;
   padding-top:8px
 }
 
@@ -299,7 +279,7 @@ button#ask:hover{
 .stats{
   margin-top:8px;
   font-size:12px;
-  color:#64748b
+  color:#9ca3af
 }
 
 /* ===== Error ===== */
@@ -307,7 +287,7 @@ button#ask:hover{
 .error{
   margin-top:10px;
   font-size:13px;
-  color:#f87171
+  color:#dc2626
 }
 
 /* ===== Responsive ===== */
