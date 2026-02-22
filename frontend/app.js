@@ -85,10 +85,10 @@ async function askQuestion() {
     }
 
     // optional: compression stats
-    if (j.stats) {
-      statsEl.textContent =
-        `Tokens: ${j.stats.original} → ${j.stats.compressed}  |  Saved: ${j.stats.saved}%`;
-    }
+    // if (j.stats) {
+    //   statsEl.textContent =
+    //     `Tokens: ${j.stats.original} → ${j.stats.compressed}  |  Saved: ${j.stats.saved}%`;
+    // }
 
   } catch (err) {
     loadingEl.style.display = 'none';
